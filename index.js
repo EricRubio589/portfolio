@@ -1,4 +1,4 @@
-
+/*
 function listenForClickOnMenuIcon() {
     var x = document.getElementById("myTopnav");
     $(".menuIcon").click(function () {
@@ -11,4 +11,4 @@ function listenForClickOnMenuIcon() {
      });
 }  
 
-listenForClickOnMenuIcon();
+listenForClickOnMenuIcon();*/
