@@ -48,6 +48,22 @@ nav {
     border-bottom: solid 1px lightgray;
 
 }
+
+.projectsContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsContainer img {
+  height: 300px;
+}
+
+.projectsContainer .project1Description {
+  font-size: 18px;
+  padding: 10%;
+}
   
   /* Style for the nav bar elements */
 .navigationMobile a {
