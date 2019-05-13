@@ -26,22 +26,6 @@ body {
     color: white;
 }
 
-/*nav {
-    display: flex;
-    margin-top: 171px;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    width: 100%;
-    border-bottom: solid 1px lightgray;
-}*/
-
-/*.menuItem {
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-}*/
-
 .navigationMobile {
     margin-top: 171px;
     display: flex;
@@ -53,9 +37,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.navigationMobile a {
-}
-
 
 /* Projects page rules */
 .projectsContainer {
@@ -65,13 +46,24 @@ body {
   align-items: center;
 }
 
+.projectsContainer h1 {
+  font-size: 20px;
+  font-family: 'Rosario', sans-serif;
+}
+
 .projectsContainer img {
-  height: 300px;
+  height: 160px;
 }
 
 .projectsContainer .project1Description {
-  font-size: 18px;
+  font-size: 15px;
   padding: 10%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.projectsContainer .project1Specs {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Style for the nav bar elements */
@@ -137,7 +129,6 @@ body {
 /* When the screen is at least 400 pixels wide */
 @media screen and (min-width: 400px) { 
   
-  /* For the About Container */
 .aboutWithPictureContainer {
   display: flex;
   align-items: center;
@@ -199,6 +190,26 @@ body {
     margin-right: 20px;
   }
 
+  .projectsContainer h1 {
+    font-size: 30px;
+  }
+  
+  .projectsContainer img {
+    height: 300px;
+  }
+  
+  .projectsContainer .project1Description {
+    font-size: 18px;
+    padding: 10% 20% 10% 20%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .projectsContainer .project1Specs {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+  }
+
 }
 
 /* When the screen is at least 1023 pixels wide */
@@ -233,6 +244,26 @@ body {
   .techIcons img {
     height: 30px;
     margin-right: 20px;
+  }
+
+  .projectsContainer h1 {
+    font-size: 35px;
+  }
+  
+  .projectsContainer img {
+    height: 550px;
+  }
+  
+  .projectsContainer .project1Description {
+    font-size: 20px;
+    padding: 7% 20% 7% 20%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .projectsContainer .project1Specs {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
   }
 
 }
