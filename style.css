@@ -7,7 +7,9 @@ body {
 }
 
 #topBanner {
-    background-color: darkgrey;
+    background-image: url(media/Pictures/amsterdamBanner.png);
+    background-size: cover;
+    background-position: center;
     position: fixed;
     display: flex;
     left: 0;
@@ -20,9 +22,11 @@ body {
 
 .bannerText {
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
-nav {
+/*nav {
     display: flex;
     margin-top: 171px;
     align-items: center;
@@ -30,13 +34,13 @@ nav {
     height: 20px;
     width: 100%;
     border-bottom: solid 1px lightgray;
-}
+}*/
 
-.menuItem {
+/*.menuItem {
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-}
+}*/
 
 .navigationMobile {
     margin-top: 171px;
@@ -46,9 +50,14 @@ nav {
     height: 30px;
     width: 100%;
     border-bottom: solid 1px lightgray;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
+.navigationMobile a {
+}
+
+
+/* Projects page rules */
 .projectsContainer {
   display: flex;
   flex-flow: column;
@@ -64,67 +73,166 @@ nav {
   font-size: 18px;
   padding: 10%;
 }
-  
-  /* Style for the nav bar elements */
+
+/* Style for the nav bar elements */
 .navigationMobile a {
-    display: flex;
-    color: black;
-    font-size: 17px;
-    margin-right: 10px;
-    margin-top: 5px;
-    text-decoration: none;
+  display: flex;
+  color: black;
+  font-size: 17px;
+  margin: 5px 10px 5px 10px;
+  text-decoration: none;
 }
   
   /* Change the color of links on hover */
 .navigationMobile a:hover {
-    color: grey;
+  color: grey;
 }
 
-/* For the About Container */
 .aboutWithPictureContainer {
   display: flex;
-  /*margin-top: 40px;*/
+  align-items: center;
+  justify-content: center;
+  padding:10%;
+}
+
+.aboutWithPictureContainer .aboutShortText {
+  font-size: 15px;
+  font-family: 'Rosario', sans-serif;
+}
+
+.aboutParagraph {
+  font-size: 15px;
+  padding: 5% 20% 20% 20%;
+  font-family: 'Rosario', sans-serif;
+}
+
+.navigationMobile .menuIcon {
+  display: flex;
+  height: 17px;
+  margin-top: 5px;
+  
+}
+
+.aboutWithPictureContainer img {
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.aboutWithPictureContainer .aboutShortText {
+  font-size: 15px;
+}
+
+.techIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techIcons img {
+  height: 20px;
+  margin-right: 20px;
+}
+
+/* When the screen is at least 400 pixels wide */
+@media screen and (min-width: 400px) { 
+  
+  /* For the About Container */
+.aboutWithPictureContainer {
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 10%;
 }
 
 .aboutWithPictureContainer img {
-  height: 200px;
+  height: 80px;
   border-radius: 50%;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 
 .aboutWithPictureContainer .aboutShortText {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-/* This is the paragraph with more detailed info */
 
 .aboutParagraph {
   font-size: 18px;
   margin-top: -50px;
-  padding: 5% 20% 20% 20%;
+  padding: 20% 20% 20% 20%;
+}
+  
+.techIcons img {
+  height: 30px;
+  margin-right: 20px;
 }
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+}
 
-    .navigationMobile .menuIcon {
-        display:flex;
-        height: 15px;
-        margin-top: 5px;
+/* When the screen is at least 600 pixels wide */
+@media screen and (min-width: 600px) {
 
-    }
-
-    .aboutWithPictureContainer img {
-      height: 70px;
-      border-radius: 50%;
-      margin-right: 25px;
-    }
-    
-    .aboutWithPictureContainer .aboutText {
-      font-size: 15px;
-    }
+  .navigationMobile .menuIcon {
+      display:flex;
+      height: 15px;
+      margin-top: 5px;
 
   }
+
+  .aboutWithPictureContainer img {
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+  
+  .aboutWithPictureContainer .aboutShortText {
+    font-size: 25px;
+  }
+
+  .aboutParagraph {
+    font-size: 18px;
+    padding: 20% 20% 20% 20%;
+  }
+
+  .techIcons img {
+    height: 30px;
+    margin-right: 20px;
+  }
+
+}
+
+/* When the screen is at least 1023 pixels wide */
+@media screen and (min-width: 1023px) { 
+
+  .aboutWithPictureContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5%;
+  }
+
+  .aboutWithPictureContainer .aboutShortText {
+    font-size: 20px;
+  }
+
+  .aboutParagraph {
+    font-size: 18px;
+    padding: 10% 20% 20% 20%;
+  }
+
+  .aboutWithPictureContainer img {
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+
+  .aboutWithPictureContainer .aboutShortText {
+    font-size: 30px;
+  }
+
+  .techIcons img {
+    height: 30px;
+    margin-right: 20px;
+  }
+
+}
