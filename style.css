@@ -126,37 +126,86 @@ body {
   margin-right: 20px;
 }
 
+.contactInfoContainer h1 {
+  font-size: 20px;
+  font-family: 'Rosario', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.contactIcons {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 207.91px;
+}
+
+.contactIcons img {
+  height: 15px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.contactIcons a {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.contactIcons a:hover {
+  color: lightgray;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
 /* When the screen is at least 400 pixels wide */
 @media screen and (min-width: 400px) { 
   
-.aboutWithPictureContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10%;
-}
+  .aboutWithPictureContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+  }
 
-.aboutWithPictureContainer img {
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 25px;
-}
+  .aboutWithPictureContainer img {
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
 
-.aboutWithPictureContainer .aboutShortText {
-  font-size: 20px;
-}
+  .aboutWithPictureContainer .aboutShortText {
+    font-size: 20px;
+  }
 
 
-.aboutParagraph {
-  font-size: 18px;
-  margin-top: -50px;
-  padding: 20% 20% 20% 20%;
-}
-  
-.techIcons img {
-  height: 30px;
-  margin-right: 20px;
-}
+  .aboutParagraph {
+    font-size: 18px;
+    margin-top: -50px;
+    padding: 20% 20% 20% 20%;
+  }
+    
+  .techIcons img {
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .contactIcons {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 10% 22%;
+  }
+
+  .contactIcons a {
+  font-size: 13px;
+  }
 
 }
 
@@ -208,6 +257,30 @@ body {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 50px;
+  }
+
+  .contactInfoContainer h1 {
+    font-size: 30px;
+    font-family: 'Rosario', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contactIcons {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 10% 27%;
+  }
+  
+  .contactIcons img {
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  .contactIcons a {
+    font-size: 15px;
   }
 
 }
