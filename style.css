@@ -39,29 +39,30 @@ body {
 
 
 /* Projects page rules */
-.projectsContainer {
+.projectContainer {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
-.projectsContainer h1 {
+.projectContainer h1 {
   font-size: 20px;
   font-family: 'Rosario', sans-serif;
 }
 
-.projectsContainer img {
+.projectContainer img {
   height: 160px;
 }
 
-.projectsContainer .project1Description {
+.projectContainer .projectDescription {
   font-size: 15px;
   padding: 10%;
   font-family: 'Montserrat', sans-serif;
 }
 
-.projectsContainer .project1Specs {
+.projectContainer .projectSpecs {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -239,21 +240,21 @@ body {
     margin-right: 20px;
   }
 
-  .projectsContainer h1 {
+  .projectContainer h1 {
     font-size: 30px;
   }
   
-  .projectsContainer img {
+  .projectContainer img {
     height: 300px;
   }
   
-  .projectsContainer .project1Description {
+  .projectContainer .projectDescription {
     font-size: 18px;
     padding: 10% 20% 10% 20%;
     font-family: 'Montserrat', sans-serif;
   }
   
-  .projectsContainer .project1Specs {
+  .projectContainer .projectSpecs {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 50px;
@@ -319,21 +320,21 @@ body {
     margin-right: 20px;
   }
 
-  .projectsContainer h1 {
+  .projectContainer h1 {
     font-size: 35px;
   }
   
-  .projectsContainer img {
+  .projectContainer img {
     height: 550px;
   }
   
-  .projectsContainer .project1Description {
+  .projectContainer .projectDescription {
     font-size: 20px;
     padding: 7% 20% 7% 20%;
     font-family: 'Montserrat', sans-serif;
   }
   
-  .projectsContainer .project1Specs {
+  .projectContainer .projectSpecs {
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 50px;
